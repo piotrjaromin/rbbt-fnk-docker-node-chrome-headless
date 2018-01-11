@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y \
     python2.7 \
     python2.7-dev \
     groff-base \
+    build-essential \
     --no-install-recommends
 
 # Install aws cli
