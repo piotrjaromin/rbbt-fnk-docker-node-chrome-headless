@@ -27,3 +27,6 @@ This Docker image is maintained by WeltN24 GmbH Developers and its main purpose 
 ## How to install a specific version of node?
 1. Find your desired version here: [https://deb.nodesource.com/node_8.x/pool/main/n/nodejs/](https://deb.nodesource.com/node_8.x/pool/main/n/nodejs/)
 1. Replace .deb url in Dockerfile
+
+## Changelog
+- 2018-02-02 Chrome 64 && node 9.5
