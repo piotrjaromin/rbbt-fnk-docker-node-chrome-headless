@@ -15,7 +15,7 @@ This Docker image is maintained by WeltN24 GmbH Developers and its main purpose 
 ## How to test locally?
 - Make changes in Dockerfile
 - Run following command in the folder where the Dockerfile is located
-- `docker run .`
+- `docker build .`
 - You can add debug outputs temporary at the end of the Dockerfile, e.g. `RUN node -v`
 
 ## How to release a new Version?
@@ -25,8 +25,9 @@ This Docker image is maintained by WeltN24 GmbH Developers and its main purpose 
 - Login to Docker Hub is done via personalized accounts, which have to be connected to [r/weltn24](https://hub.docker.com/u/weltn24/)
 
 ## How to install a specific version of node?
-1. Find your desired version here: [https://deb.nodesource.com/node_8.x/pool/main/n/nodejs/](https://deb.nodesource.com/node_8.x/pool/main/n/nodejs/)
+1. Find your desired version here: [https://deb.nodesource.com/node_9.x/pool/main/n/nodejs/](https://deb.nodesource.com/node_9.x/pool/main/n/nodejs/)
 1. Replace .deb url in Dockerfile
 
 ## Changelog
+- 2018-03-16 Chrome 65 && node 9.8 && yarn 1.5.1
 - 2018-02-02 Chrome 64 && node 9.5
