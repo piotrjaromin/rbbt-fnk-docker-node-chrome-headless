@@ -37,11 +37,11 @@ RUN curl -sSL https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
 
 # Install yarn pinned version
 RUN apt-get update && apt-get install -y \
-    yarn=1.5.1-1 \
+    yarn=1.6.0-1 \
     --no-install-recommends
 
-# Find your desired version here: https://deb.nodesource.com/node_9.x/pool/main/n/nodejs/
+# Find your desired version here: https://deb.nodesource.com/node_10.x/pool/main/n/nodejs/
 # Ubuntu 16.04.3 LTS (Xenial Xerus) (https://wiki.ubuntu.com/Releases)
-RUN curl https://deb.nodesource.com/node_9.x/pool/main/n/nodejs/nodejs_9.8.0-1nodesource1_amd64.deb > node.deb \
+RUN curl https://deb.nodesource.com/node_10.x/pool/main/n/nodejs/nodejs_10.0.0-1nodesource1_amd64.deb > node.deb \
  && dpkg -i node.deb \
  && rm node.deb
