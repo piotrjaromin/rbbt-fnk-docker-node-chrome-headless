@@ -19,16 +19,16 @@ This Docker image is maintained by WeltN24 GmbH Developers and its main purpose 
 - You can add debug outputs temporary at the end of the Dockerfile, e.g. `RUN node -v`
 
 ## How to release a new Version?
-- This Dockerfile is automatically built and released on [Docker Hub](https://hub.docker.com/r/weltn24/up-docker-node-chrome-headless/)
-- Every release will be tagged as `latest`
-- If a different tagging strategy is desired [hub.docker.com](https://hub.docker.com/r/weltn24/up-docker-node-chrome-headless/) needs to be configured according to branch naming conventions
-- Login to Docker Hub is done via personalized accounts, which have to be connected to [r/weltn24](https://hub.docker.com/u/weltn24/)
+- This Dockerfile is automatically built and released on [Docker Hub](https://hub.docker.com/r/springmedia/rbbt-docker-node-chrome-headless/)
+- Builds are triggered by released tags on github
+- Login to Docker Hub is done via personalized accounts, which have to be connected to [r/springmedia](https://hub.docker.com/u/springmedia/)
 
 ## How to install a specific version of node?
 1. Find your desired version here: [https://deb.nodesource.com/node_10.x/pool/main/n/nodejs/](https://deb.nodesource.com/node_10.x/pool/main/n/nodejs/)
 1. Replace .deb url in Dockerfile
 
 ## Changelog
+- **2018-05-24**: `Rerelease of last version after move to github spring-media org and new docker hub orga`
 - **2018-05-02**: `Chrome 66`, `node 10.0`, `yarn 1.6.0`
 - **2018-03-16**: `Chrome 65`, `node 9.8`, `yarn 1.5.1`
 - **2018-02-02**: `Chrome 64`, `node 9.5`
