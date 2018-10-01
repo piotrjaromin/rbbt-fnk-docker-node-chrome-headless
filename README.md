@@ -28,6 +28,7 @@ This Docker image is maintained by WeltN24 GmbH Developers and its main purpose 
 1. Replace .deb url in Dockerfile
 
 ## Changelog
+- **2018-10-01**: `Chrome 69`, `node 10.9`, `yarn 1.10.1`
 - **2018-06-28**: `Chrome 67`, `node 10.5`, `yarn 1.7.0`
 - **2018-05-24**: `Rerelease of last version after move to github spring-media org and new docker hub orga`
 - **2018-05-02**: `Chrome 66`, `node 10.0`, `yarn 1.6.0`
