@@ -19,7 +19,7 @@ This Docker image is maintained by WeltN24 GmbH Developers and its main purpose 
 - You can add debug outputs temporary at the end of the Dockerfile, e.g. `RUN node -v`
 
 ## How to release a new Version?
-- This Dockerfile is automatically built and released on [Docker Hub](https://hub.docker.com/r/springmedia/rbbt-docker-node-chrome-headless/)
+- This Dockerfile is automatically built and released on [Docker Hub](https://hub.docker.com/r/springmedia/rbbt-fnk-docker-node-chrome-headless/)
 - Builds are triggered by released tags on github
 - Login to Docker Hub is done via personalized accounts, which have to be connected to [r/springmedia](https://hub.docker.com/u/springmedia/)
 
