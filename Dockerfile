@@ -1,11 +1,8 @@
-FROM ubuntu:latest
+# This is for docker image!
+FROM ubuntu:18.04
 
-MAINTAINER Harry <harald.urban@weltn24.de>
-LABEL vendor="WeltN24 Team Rabbit"
-LABEL tools="aws git pip chrome node npm yarn"
-
-# Install deps
-RUN apt-get update && apt-get install -y \
+RUN apt-get update
+RUN apt-get install -y \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -19,6 +16,7 @@ RUN apt-get update && apt-get install -y \
     --no-install-recommends
 
 # Install aws cli
+RUN pip install --upgrade pip
 RUN pip install --upgrade pip setuptools
 RUN pip install --upgrade awscli
 
@@ -28,7 +26,7 @@ RUN curl -sSL https://dl.google.com/linux/linux_signing_key.pub | apt-key add - 
 
 # Install Chrome
 # https://www.ubuntuupdates.org/ppa/google_chrome?dist=stable
-ENV CHROME_VERSION=78.0.3904.97-1
+ENV CHROME_VERSION=85.0.4183.102-1
 
 RUN apt-get update && apt-get install -y \
     google-chrome-stable=$CHROME_VERSION \
